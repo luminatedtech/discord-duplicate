@@ -12,7 +12,7 @@ function SideBar () {
 
 }
 const SideBarIcon = ({ icon })=> (
-    <div className='relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-gray-50 text-green-300 hover:bg-green-600'>
+    <div className='relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-gray-50 text-green-300 hover:bg-green-600 rounded-3x1 hover:rounded-3xl transition-all duration-300 ease-linear cursor-pointer'>
         {icon}
     </div>
 )
