@@ -1,15 +1,15 @@
-function Post ({name,text,timestamp}) {
+function Post ({text,timestamp}) {
 
-    const seed = Math.round(Math.random() * 100);
+    
     return (
       <div className={'post'}>
         <div className='avatar-wrapper'>
-          <img src={`https://avatars.dicebear.com/api/open-peeps/${seed}.svg`} alt='' className='avatar' />
+          <img src={`avatar.png`} alt='' className='avatar' />
         </div>
   
         <div className='post-content'>
           <p className='post-owner'>
-            {name}
+            Allen Kim
             <small className='timestamp'>{timestamp}</small>
           </p>
           <p className='post-text'>{text}</p>
