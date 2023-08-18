@@ -5,14 +5,13 @@ import { FaChevronDown, FaChevronRight, FaPlus } from 'react-icons/fa';
 
 
 
-function ChannelBar({topics,questions, random}) {
+function ChannelBar({topic,textChannel}) {
   return (
     <div className='channel-bar shadow-lg'>
       <ChannelBlock />
       <div className='channel-container'>
-        <Dropdown header='About me' selections={topics} />
-        <Dropdown header='Skills' selections={questions} />
-        <Dropdown header='Projects' selections={random} />
+        <Dropdown header={topic} selections={textChannel}/>
+        
       </div>
     </div>
   );

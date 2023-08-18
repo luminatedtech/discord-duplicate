@@ -10,9 +10,14 @@ function SideBar () {
             <Link to='/skills'>
               <SideBarIcon icon={<FaPoo size="28"/>} text="Skills"/>
             </Link>
-            
-            <SideBarIcon icon={<BsPlus size="28"/>} text="Project"/>
+            <Link to='/projects'>
+            <SideBarIcon icon={<BsPlus size="28"/>} text="Projects"/>
+            </Link>
+            <Link to='/contact'>
             <SideBarIcon icon={<BsGearFill size="28"/>} text="Contact"/>
+            </Link>
+            
+           
         </div>
     )
 
