@@ -11,9 +11,9 @@ const ChannelBar = () => {
     <div className='channel-bar shadow-lg'>
       <ChannelBlock />
       <div className='channel-container'>
-        <Dropdown header='Topics' selections={topics} />
-        <Dropdown header='Questions' selections={questions} />
-        <Dropdown header='Random' selections={random} />
+        <Dropdown header='About me' selections={topics} />
+        <Dropdown header='Skills' selections={questions} />
+        <Dropdown header='Projects' selections={random} />
       </div>
     </div>
   );
