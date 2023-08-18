@@ -11,7 +11,7 @@ function ContentContainer({text}){
       <TopNavigation />
       <div className='content-list'>{
         text.map((singleText)=> (
-          <Post key={text} text={singleText}/>
+          <Post key={text.index} text={singleText}/>
         ))
       }
         

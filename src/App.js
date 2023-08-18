@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import { BrowserRouter, Routes,Route,Outlet } from 'react-router-dom';
 import './App.css';
 import SideBar from './SideBar';
 import ChannelBar from './ChannelBar';
@@ -17,13 +17,13 @@ function App() {
       <SideBar/>
       <Routes>
         <Route path='/'
-          element={<><ChannelBar topic={["About me"]} textChannel={["Who I am"]}/><ContentContainer text={aboutText}/></>}
+          element={<><ChannelBar topic={["About me"]} textChannel={["Who I am"]}/><ContentContainer text={aboutText}/> <Outlet/></>}
           />
           <Route path='/skills'
-          element={<><ChannelBar topic={["Skills"]} textChannel={["Skills"]}/><ContentContainer/> text={skillsText} </>}
+          element={<><ChannelBar topic={["Skills"]} textChannel={["Skills"]}/><ContentContainer text={skillsText}/> <Outlet/></>}
           />
            <Route path='/projects'
-          element={<><ChannelBar topic={["Projects"]} textChannel={["My Projects"]}/><ContentContainer/> text={projectText}</>}
+          element={<><ChannelBar topic={["Projects"]} textChannel={["My Projects"]}/><ContentContainer text={projectText}/><Outlet/></>}
           />
          <Route path='/contact'
           element={<><ChannelBar topic={["Contact Me"]} textChannel={["How to Contact Me"]}/><ContentContainer/></>}
