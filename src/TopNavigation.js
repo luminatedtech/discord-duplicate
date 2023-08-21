@@ -45,7 +45,7 @@ import {
   const BellIcon = () => <FaRegBell size='24' className='top-navigation-icon' />;
   const UserCircle = () => <FaUserCircle size='24' className='top-navigation-icon' />;
   const HashtagIcon = () => <FaHashtag size='20' className='title-hashtag' />;
-  const Title = () => <h5 className='title-text'>tailwind-css</h5>;
+  const Title = () => <h5 className='title-text'>my-portfolio</h5>;
   
   export default TopNavigation;
   

@@ -7,7 +7,7 @@ import ContentContainer from './ContentContainer';
 function App() {
   const aboutText =["Hello! Welcome to my Portfolio website, My name is Allen Kim","I am a software engineer"]
   const projectText=["Here are some projects that display my passions and use of fullstack technologies","This first project is called Thrifty"]
-  const skillsText=["With 500+ hours in creating fullstack applications, I have learned several important skills along the way.","Frontend Technologies: JavaScript, HTML, CSS, TypeScript, React, Python"]
+  const skillsText=["With 500+ hours in creating fullstack applications, I have learned several important skills along the way.","Frontend Technologies: JavaScript, HTML, CSS, TypeScript, React, Python","Backend Technologies: Ruby and Ruby on Rails"]
 
   console.log(skillsText)
 
